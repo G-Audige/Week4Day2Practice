@@ -1,5 +1,6 @@
-// I. Variables & Datatypes
-
+//++++++++++++++++++++++++++++++//
+//   I. VARIABLES & DATATYPES   //
+//++++++++++++++++++++++++++++++//
 // A. Q + A
 // 1. How do we assign a value to a variable?
     let var1 = 3
@@ -83,7 +84,9 @@ firstVariable = 1
 
 
 
-// II. Loops
+//++++++++++++++++++++++++++++++//
+//          II. LOOPS           //
+//++++++++++++++++++++++++++++++//
 // A. The basics
 // 1. Write a loop that will print out all the numbers from 0 to 10, inclusive
     for(let i = 0; i <= 10; i++) {
@@ -158,7 +161,9 @@ firstVariable = 1
 
 
 
-// III. Arrays & Control flow
+//++++++++++++++++++++++++++++++//
+// III. ARRAYS & CONTROLS FLOW  //
+//++++++++++++++++++++++++++++++//
 // A. Talk about it:
 // 1. What are the things in an array called?
     // The things in an array are called objects.
@@ -253,62 +258,63 @@ firstVariable = 1
     }
 
 
-// // H. What's in Your Closet?
-// // Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript.
+// H. What's in Your Closet?
+// Below, we've given you examples of Kristyn and Thom's closets modeled as data in JavaScript.
 
-// const kristynsCloset = [
-//   "left shoe",
-//   "cowboy boots",
-//   "right sock",
-//   "Per Scholas hoodie",
-//   "green pants",
-//   "yellow knit hat",
-//   "marshmallow peeps"
-// ];
+    const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "Per Scholas hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+    ];
 
-// // Thom's closet is more complicated. Check out this nested data structure!!
-// const thomsCloset = [
-//   [
-//     // These are Thom's shirts
-//     "grey button-up",
-//     "dark grey button-up",
-//     "light blue button-up",
-//     "blue button-up",
-//   ],[
-//     // These are Thom's pants
-//     "grey jeans",
-//     "jeans",
-//     "PJs"
-//   ],[
-//     // Thom's accessories
-//     "wool mittens",
-//     "wool scarf",
-//     "raybans"
-//   ]
-// ];
-// // 1. What's Kristyn wearing today? Using bracket notation to access items in kristynsCloset, log the sentence "Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.
-// console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!")
-// // 2. Kristyn just bought some sweet shades! Add "raybans"to her closet after "yellow knit hat".
-// console.log(kristynsCloset)
-// kristynsCloset[6] = "raybans"
-// console.log(kristynsCloset)
-// // 3. Kristyn spilled coffee on her hat... modify this item to read "stained knit hat"instead of yellow.
-// kristynsCloset[5] = "stained knit hat"
-// console.log(kristynsCloset)
-// // 4. Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirtsarray.
-// thomsCloset[0][0]
-// // 5. In the same way, access one item from Thom's pants array.
-// thomsCloset[1][2]
-// // 6. Access one item from Thom's accessories array.
-// thomsCloset[2][2]
-// // 7. Log a sentence about what Thom's wearing. Example: "Thom is looking fierce in a grey button-up, jeans and wool scarf!"
-// console.log(`Tom is looking fierce in a ${thomsCloset[0][0]}, ${thomsCloset[1][2]}, and ${thomsCloset[2][2]}!`)
-// // 8. Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
-// thomsCloset[1][2] = "Footie Pajamas" 
+// Thom's closet is more complicated. Check out this nested data structure!!
+    const thomsCloset = [
+    [
+        // These are Thom's shirts
+        "grey button-up",
+        "dark grey button-up",
+        "light blue button-up",
+        "blue button-up",
+    ],[
+        // These are Thom's pants
+        "grey jeans",
+        "jeans",
+        "PJs"
+    ],[
+        // Thom's accessories
+        "wool mittens",
+        "wool scarf",
+        "raybans"
+    ]
+    ];
+// 1. What's Kristyn wearing today? Using bracket notation to access items in kristynsCloset, log the sentence "Kristyn is rocking that " + the third item in Kristyn's closet + " today!" to the console.
+    console.log("Kristyn is rocking that " + kristynsCloset[2] + " today!")
+// 2. Kristyn just bought some sweet shades! Add "raybans"to her closet after "yellow knit hat".
+    console.log(kristynsCloset)
+    kristynsCloset[6] = "raybans"
+    console.log(kristynsCloset)
+// 3. Kristyn spilled coffee on her hat... modify this item to read "stained knit hat"instead of yellow.
+    kristynsCloset[5] = "stained knit hat"
+    console.log(kristynsCloset)
+// 4. Put together an outfit for Thom! Using bracket notation, access the first element in Thom's shirtsarray.
+    thomsCloset[0][0]
+// 5. In the same way, access one item from Thom's pants array.
+    thomsCloset[1][2]
+// 6. Access one item from Thom's accessories array.
+    thomsCloset[2][2]
+// 7. Log a sentence about what Thom's wearing. Example: "Thom is looking fierce in a grey button-up, jeans and wool scarf!"
+    console.log(`Tom is looking fierce in a ${thomsCloset[0][0]}, ${thomsCloset[1][2]}, and ${thomsCloset[2][2]}!`)
+// 8. Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to Footie Pajamas.
+    thomsCloset[1][2] = "Footie Pajamas" 
 
 
-
-// IV. Functions
+//++++++++++++++++++++++++++++++//
+//        IV. Functions         //
+//++++++++++++++++++++++++++++++//
 // B. printCool
 // Write a function printCoolthat accepts one parameter, name as an argument. The function should print the name and a message saying that that person is cool.
     const printCoolthat = function(name) {
@@ -399,8 +405,9 @@ firstVariable = 1
     console.log(printLongestWord(fruit))
 
 
-
-// V. Objects
+//++++++++++++++++++++++++++++++//
+//         V. OBJECTS           //
+//++++++++++++++++++++++++++++++//
 // Let's set up an object data structure. Let's say we have a website that sells products, and we have a user of our website, and we want to store that user's data. The object data structure is a good way to organize the data from our user.
 
 // A. Make a user object
